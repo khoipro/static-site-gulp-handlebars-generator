@@ -1,0 +1,130 @@
+.section {
+  margin-bottom: 4rem;
+}
+
+.section__wrapper {
+  position: relative;
+  padding: 2rem;
+  background-color: $c-white;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  box-shadow: 2px 2px 0 0 rgba(0, 0, 0, 0.1);
+
+  .experience__section & {
+    background-image: url('../img/bg-white.png');
+    padding: 2rem 2rem 8rem 2rem;
+    @media (min-width: break($m)) {
+      padding: 2rem 2rem 12rem 2rem;
+    }
+  }
+}
+
+.section-title {
+  @extend h5;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+  background: $c-brown;
+  color: $c-white;
+  @media (max-width: break($m, false)) {
+    width: 100%;
+  }
+  @media (min-width: break($m)) {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    box-shadow: 2px 2px 0 0 rgba(0, 0, 0, 0.15);
+    transform: translateX(-10px) translateY(-50%) rotate(-5deg);
+  }
+}
+
+.section-list {
+  margin-top: 3rem;
+  @media (min-width: break($m)) {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 1.5rem -1rem 0;
+  }
+}
+
+.section-list--grid {
+  margin-top: 1.5rem;
+  @media (min-width: break($s)) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -1rem;
+    margin-right: -1rem;
+  }
+  .section-item {
+    text-align: center;
+    @media (min-width: break($s)) {
+      width: 50%;
+      flex: 0 0 auto;
+      padding: 0 1rem;
+    }
+  }
+  .section-item__title {
+    margin-top: 0;
+  }
+}
+
+.section-item {
+  margin-bottom: 0.5rem;
+  @media (min-width: break($m)) {
+    flex: 0 0 auto;
+    width: 50%;
+    padding: 0 1rem;
+  }
+}
+
+.section-item__inner {
+  display: flex;
+  flex-flow: column;
+}
+
+.section-thumbnail {
+  width: 100%;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  flex: 1 0 auto;
+}
+
+.section-photo {
+  border-radius: 5px;
+}
+
+.section-item__title {
+  @extend h5;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.section-meta {
+  span {
+    margin-bottom: 0.2rem;
+    font-weight: 400;
+  }
+}
+
+.section-meta__company {
+  display: block;
+  margin-bottom: 0.2rem;
+  color: $c-black;
+}
+
+.section-meta__date {
+  margin-bottom: 0.5rem;
+  font-size: 0.85rem;
+  color: $c-gray;
+}
+
+.section-quote {
+  padding-top: 1rem;
+  @media (min-width: break($m)) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    max-width: 65%;
+  }
+}

@@ -1,0 +1,37 @@
+body {
+  background: $c-light;
+  @media (min-width: break($l)) {
+    display: flex;
+    flex-flow: row;
+    padding-left: 15rem;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  @media (min-width: break($m)) {
+    padding: 0 40px;
+  }
+  @media (min-width: break($l)) {
+    padding: 0 80px;
+    max-width: $gutter;
+  }
+}
+
+.header {
+  padding: 2rem 0;
+  border-bottom: 1px solid $c-light;
+}
+
+.main {
+  padding: 2rem 0;
+}
+
+.main__container {
+  max-width: 100%;
+}
+
+.footer {
+  text-align: center;
+}

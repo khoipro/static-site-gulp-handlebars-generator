@@ -1,0 +1,43 @@
+.hero__wrapper {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.hero__text {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  @media (min-width: break($m)) {
+    width: 60%;
+    max-width: 100%;
+  }
+}
+
+.hero__text-position {
+  margin-bottom: 0.5rem;
+}
+
+.hero__text-location {
+  @extend h5;
+  font-weight: 400;
+}
+
+.hero__photo {
+  flex: 0 0 auto;
+  width: 100%;
+  max-width: 25rem;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  @media (min-width: break($m)) {
+    width: 40%;
+  }
+  &:before {
+    content: '';
+    padding-top: 100%;
+    display: block;
+  }
+}

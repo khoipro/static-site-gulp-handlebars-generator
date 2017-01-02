@@ -1,0 +1,106 @@
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: $f-sans;
+  font-weight: 300;
+  color: $c-dark;
+}
+
+strong {
+  font-weight: 600;
+}
+
+img {
+  max-width: 100%;
+}
+
+figure {
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 auto;
+  font-family: $f-serif;
+  font-weight: 600;
+  strong {
+    font-weight: 700;
+  }
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+h4 {
+  font-size: 1.4rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+p {
+  margin: 0 0 1rem 0;
+  font-size: 1rem;
+}
+
+blockquote {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 0.5rem;
+  @media (min-width: break($s)) {
+    padding: 2rem;
+  }
+  p {
+    &:first-child {
+      @extend h5;
+      font-weight: 400;
+      font-style: italic;
+      letter-spacing: 0.08rem;
+      color: $c-dark;
+      padding-left: 2rem;
+      background: url('../img/quotes.png') top left no-repeat;
+      background-size: 1rem 0.8rem;
+      @media (min-width: break($s)) {
+        padding-left: 5rem;
+        background-size: 3rem 2rem;
+      }
+    }
+    &:last-child {
+      margin-top: 1rem;
+      font-weight: 700;
+      text-align: right;
+    }
+  }
+}
+
+.site-title {
+  @extend h4;
+  font-weight: 400;
+}
+
+.intro {
+  @extend h3;
+  font-weight: 500;
+  text-align: center;
+}

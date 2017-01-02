@@ -1,0 +1,113 @@
+{
+  "title": "Khoi Pro Nguyen",
+  "menu": [
+    {
+      "name": "Experience",
+      "href": "experience"
+    },
+    {
+      "name": "Portfolio",
+      "href": "portfolio"
+    },
+    {
+      "name": "Testimonials",
+      "href": "testimonials"
+    },
+    {
+      "name": "Contact",
+      "href": "contact"
+    }
+  ],
+  "social": {
+    "facebook": "https://www.facebook.com/khoicapricorn",
+    "twitter": "https://www.twitter.com/khoiprodotcom",
+    "linkedin": "https://vn.linkedin.com/in/khoipro"
+  },
+  "hero": {
+    "position": "Frontend Developer",
+    "location": "Hanoi, Vietnam",
+    "img": "assets/images/hero.png"
+  },
+  "experience": [
+    {
+      "title": "Technical Lead",
+      "company": "Solis Lab",
+      "date": "June 2016 - Present"
+    },
+    {
+      "title": "Frontend Developer",
+      "company": "J.O.O.M - DesignWall",
+      "date": "January 2016 - June 2016"
+    },
+    {
+      "title": "UX Designer",
+      "company": "LadiPage - Landing Page Builder",
+      "date": "October 2015 - December 2016"
+    },
+    {
+      "title": "CEO & Founder",
+      "company": "Hostname.club",
+      "date": "February 2015 - October 2015"
+    },
+    {
+      "title": "Sales Manager",
+      "company": "Light Technology Viet (Hostvn.net)",
+      "date": "April 2013 - February 2015"
+    },
+    {
+      "title": "Assistant",
+      "company": "CFORD - Thai Nguyen University",
+      "date": "November 2013 - March 2014"
+    },
+    {
+      "title": "IT Manager & Customer Support",
+      "company": "Thai Duong Health",
+      "date": "September 2011 - October 2013"
+    },
+    {
+      "title": "IT Manager & Marketing Assistant",
+      "company": "Amega Travel",
+      "date": "June 2010 - August 2011"
+    }
+  ],
+  "portfolio": [
+    {
+      "title": "Gigaclone",
+      "img": "assets/images/gigaclone.png"
+    },
+    {
+      "title": "Eurosom",
+      "img": "assets/images/eurosom.png"
+    },
+    {
+      "title": "CHS",
+      "img": "assets/images/chsorg.png"
+    },
+    {
+      "title": "UpReseller",
+      "img": "assets/images/upreseller.png"
+    },
+    {
+      "title": "TopHostVn",
+      "img": "assets/images/tophostvn.png"
+    },
+    {
+      "title": "HOSTNAME.CLUB",
+      "img": "assets/images/hostnameclub.png"
+    },
+    {
+      "title": "RC&RL",
+      "img": "assets/images/khoanga.png"
+    }
+  ],
+  "testimonials": [
+    {
+      "content": "A great designer with excellent communication skills and skillful. I recommend this company for anyone who wants his design done for website and mobile or anything else with a very reasonable price.",
+      "client": "Issa, from Eurosom"
+    },
+    {
+      "content": "Let me tell you all something here, Khoi Nguyen has saved me countless amount of time and stress, I suggest that you should use him for all your Wordpress and web developments.",
+      "client": "Benjamin McAvoy"
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Khoi Pro Nguyen - Frontend Developer</title>
+  <meta name="author" content="Khoi Nguyen">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js"></script>
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <header class="header" role="banner">
+    <div class="container header__container">
+      <div class="header__inner">
+        <h1 class="site-title"><span>Khoi Pro</span></h1>
+        <nav class="menu" role="navigation" id="nav">
+        </nav>
+      </div>
+      <script type="text/html" id="navigation-template">
+        <ul>
+          {{#menu}}
+            <li>
+              <a href="#{{href}}" class="menu__link">{{name}}</a>
+            </li>
+          {{/menu}}
+        </ul>
+      </script>
+    </div>
+  </header>
+  <div class="main" role="main">
+    <div class="container main__container">
+      <section class="hero">
+        <div class="hero__wrapper" id="hero"></div>
+        <script type="text/html" id="hero-template">
+          <div class="hero__text">
+            <h2 class="hero__text-position">{{hero.position}}</h2>
+            <span class="hero__text-location">{{hero.location}}</span>
+          </div>
+          <figure class="hero__photo" style="background-image: url('{{hero.img}}');"></figure>
+        </script>
+      </section>
+      <section class="section experience__section">
+        <div class="section__wrapper">
+          <h2 class="section-title"><span class="pe-7s-graph1"></span> Experience</h2>
+          <div class="section-list" id="experience">
+          </div>
+          <div class="section-quote">
+            <blockquote>
+              <p>
+                There are no secrets to success. It is the result of preparation, hard work, and learning from failure.
+              </p>
+              <p>
+                By Colin Powell
+              </p>
+            </blockquote>
+          </div>
+          <script type="text/html" id="experience-template">
+            {{#experience}}
+              <article class="section-item">
+                <h3 class="section-item__title">{{title}}</h3>
+                <div class="section-meta">
+                  <span class="section-meta__company"><i class="pe-7s-paper-plane"></i> {{company}}</span>
+                  <span class="section-meta__date"><i class="pe-7s-date"></i> {{date}}</span>
+                </div>
+              </article>
+            {{/experience}}
+          </script>
+        </div>
+      </section>
+      <section class="section portfolio__section">
+        <div class="section__wrapper">
+          <h2 class="section-title"><span class="pe-7s-display2"></span> Example Work</h2>
+          <div class="section-list section-list--grid" id="portfolio">
+          </div>
+          <script type="text/html" id="portfolio-template">
+            {{#portfolio}}
+              <article class="section-item">
+                <div class="section-item__inner">
+                  <div class="section-thumbnail">
+                    <img src="{{img}}" alt="{{title}}" class="section-photo">
+                  </div>
+                  <h3 class="section-item__title">{{title}}</h3>
+                </div>
+              </article>
+            {{/portfolio}}
+          </script>
+        </div>
+      </section>
+      <section class="section testimonials__section">
+        <div class="section__wrapper">
+          <h2 class="section-title"><span class="pe-7s-chat"></span> Testimonials</h2>
+          <div class="section-list section-list--row" id="testimonials"></div>
+          <script type="text/html" id="testmonials-template">
+            {{#testimonials}}
+            <div class="section-item">
+              <blockquote>
+                <p>
+                  {{content}}
+                </p>
+                <p>
+                  {{client}}
+                </p>
+              </blockquote>
+            </div>
+            {{/testimonials}}
+          </script>
+        </div>
+      </section>
+    </div>
+  </div>
+  <script src="assets/js/main.min.js"></script>
+</body>
+</html>

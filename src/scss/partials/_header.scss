@@ -1,0 +1,110 @@
+.header {
+  box-shadow: 2px 2px 0 0 rgba(0, 0, 0, 0.05);
+  background: $c-white;
+  @media (min-width: break($l)) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    flex: 1 0 auto;
+    width: 12rem;
+    height: 100%;
+  }
+}
+
+.header__container {
+  position: relative;
+  padding: 0 2rem;
+}
+
+.header__inner {
+  @media (max-width: break($l, false)) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.site-title {
+  text-align: center;
+  @media (max-width: break($l, false)) {
+    margin: 0;
+  }
+  span {
+    display: inline-block;
+    position: relative;
+    padding: 0.8rem;
+    background: $c-black;
+    color: $c-white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    &:before {
+      content: '';
+      width: 0;
+      height: 2px;
+      background: transparent;
+      position: absolute;
+      top: -2px;
+      left: 0;
+      transition: all 0.4s ease-in-out;
+    }
+    &:after {
+      content: '';
+      width: 0;
+      height: 2px;
+      background: transparent;
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      transition: all 0.4s ease-in-out;
+    }
+    &:hover {
+      background: $c-white;
+      color: $c-dark;
+      &:before,
+      &:after {
+        background: $c-brown;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.menu {
+  display: none;
+  position: relative;
+  margin: 2rem auto;
+  @media (min-width: break($l)) {
+    display: block;
+  }
+  ul {
+    @media (min-width: break($m)) {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
+.menu__link {
+  display: block;
+  background: $c-white;
+  border: 1px solid $c-light;
+  margin: 0 0 0.5rem 0;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: $c-dark;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+
+  @media (min-width: break($m)) {
+    box-shadow: 2px 2px 0 0 rgba(0, 0, 0, 0.05);
+  }
+
+  &:hover {
+    background: $c-brown;
+    color: $c-white;
+    border-color: $c-brown;
+    transform: translateX(5%);
+  }
+}
